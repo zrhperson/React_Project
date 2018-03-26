@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BFD UI
 
 [![build status](https://img.shields.io/travis/baifendian/bfd-ui.svg)](https://travis-ci.org/baifendian/bfd-ui)
@@ -117,3 +118,6 @@ npm run create MyComponent
 ## LICENSE
 
 [BSD License](https://github.com/baifendian/bfd-ui/blob/master/LICENSE)
+=======
+# React_Project
+>>>>>>> 5b0476b43631af707a369fc2c171fc51d71d97b8
