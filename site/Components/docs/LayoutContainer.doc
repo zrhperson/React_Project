@@ -1,0 +1,59 @@
+﻿/**
+ * @title 水平布局
+ */
+import LayoutContainer from 'bocomui/LayoutContainer'
+
+const LayoutContainerH= () => {
+  return (
+    <LayoutContainer horizon className="container" gap= {10} >
+        <div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+        <div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+   </LayoutContainer>  )
+}
+
+/**
+ * @title 垂直布局
+ */
+import LayoutContainer from 'bocomui/LayoutContainer'
+
+const LayoutContainerV= () => {
+  return (
+    <LayoutContainer vertical className="container" gap= '10' >
+        <div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+        <div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+   </LayoutContainer>  )
+}
+
+/**
+ * @title Tile布局
+ */
+import LayoutContainer from 'bocomui/LayoutContainer'
+
+const LayoutContainerT= () => {
+  return (
+    <LayoutContainer tile className="container" gap= '10' >
+        <div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+        <div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+		<div style={{backgroundColor: '#0271DD',width:'100px',height: '70px',border: '1px solid #ff2a25'}}></div>
+   </LayoutContainer>  )
+}
+
+
+@component LayoutContainer

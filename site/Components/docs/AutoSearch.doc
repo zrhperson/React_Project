@@ -1,0 +1,22 @@
+﻿/**
+ * @title 基本功能
+ */
+import AutoSearch from 'bocomui/AutoSearch'
+
+class AutoSearchBasic extends Component{
+
+
+	handleSearch(value) {
+    	console.log(value);
+  	}
+
+  render(){
+  	return (
+	    <AutoSearch onSearch={this.handleSearch}
+	     placeholder="输入关键词" source={['test', 'test2']} />
+  )
+  }
+  
+}
+
+@component AutoSearch

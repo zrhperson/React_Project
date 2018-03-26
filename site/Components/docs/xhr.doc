@@ -1,0 +1,19 @@
+/**
+ * @title 基本功能
+ */
+import xhr from 'bocomui/xhr'
+import Button from 'bocomui/Button'
+
+const MessageSuccess = () => {
+  return (
+    <Button onClick={() => xhr({
+      type: 'DELETE',
+      url: '/user/5',
+      success(data) {
+        console.log(data)
+      }
+    })}>删除</Button>
+  )
+}
+
+@component xhr

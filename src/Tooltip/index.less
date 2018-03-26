@@ -1,0 +1,38 @@
+/**
+ * Copyright 2017-present, BOCOMUI, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+@mainColor: #333;
+
+.bocomui-tooltip__popover {
+  white-space: pre-wrap;
+  > .bocomui-popover__content {
+    background-color: @mainColor;
+    color: #fff;
+  }
+  &.bocomui-popover--up {
+    &:after {
+      border-top-color: @mainColor;
+    }
+  }
+  &.bocomui-popover--down {
+    &:after {
+      border-bottom-color: @mainColor;
+    }
+  }
+  &.bocomui-popover--left {
+    &:after {
+      border-left-color: @mainColor;
+    }
+  }
+  &.bocomui-popover--right {
+    &:after {
+      border-right-color: @mainColor;
+    }
+  }
+}

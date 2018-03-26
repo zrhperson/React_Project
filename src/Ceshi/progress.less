@@ -1,0 +1,27 @@
+.progress1{
+  background: #e5e9eb;
+  height: 5px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.progress-bar1{
+  animation: widthProgress 1.5s;
+  background-image: linear-gradient(to right,#4cd964,#5ac8fa,#007aff,#34aabc,#5856d6,#ff2d55);
+  background-size: 100% 5px;
+  height: 100%;
+  position: relative;
+}
+.progress-shadow1{
+  background-image: linear-gradient(to bottom,#eaecee,transparent);
+  height: 100px;
+  position: absolute;
+  top:100%;
+  transform: skew(50deg);
+  transform-origin: 0 0;
+  width: 100%;
+}
+
+@keyframes widthProgress {
+  from {width: 0;}
+  to {width: 100%;}
+}

@@ -1,0 +1,12 @@
+/**
+ * @title 基本功能
+ */
+import Ceshi from 'bocomui/Ceshi'
+
+const CeshiBasic = () => {
+  return (
+    <Ceshi />
+  )
+}
+
+@component Ceshi

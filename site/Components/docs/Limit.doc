@@ -1,0 +1,12 @@
+/**
+ * @title 基本功能
+ */
+import Limit from 'bocomui/Limit'
+
+const LimitBasic = () => {
+  return (
+    <Limit size="10">字数超过10个会自动以省略号结束。</Limit>
+  )
+}
+
+@component Limit

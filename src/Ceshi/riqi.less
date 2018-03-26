@@ -1,0 +1,114 @@
+.bocomui-datepicker__popover {
+  .bocomui-popover__content {
+    padding: 0;
+    max-width: none;
+  }
+}
+
+@import '../variables.less';
+
+.bocomui-calendar {
+  color: #666;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 2px;
+  table {
+    font: inherit;
+    margin-top: 10px;
+    border-collapse: collapse;
+    th {
+      text-align: center;
+      padding: 3px;
+      font-weight: normal;
+      color: #999;
+    }
+    td {
+      min-width: 0;
+      text-align: center;
+    }
+  }
+}
+
+.bocomui-calendar__day {
+  display: block;
+  white-space: nowrap;
+  width: 100%;
+  padding: 6px;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    text-decoration: none;
+    background-color: #efefef;
+  }
+  &[disabled] {
+    color: #eaeaea;
+    background-color: #fafafa;
+    cursor: default;
+  }
+}
+
+.bocomui-calendar__header {
+  text-align: center;
+  .bocomui-btn + .bocomui-btn {
+    margin: 0;
+  }
+}
+
+.bocomui-calendar__header-left {
+  float: left;
+}
+
+.bocomui-calendar__header-right {
+  float: right;
+}
+
+.bocomui-calendar__result {
+  display: inline-block;
+  line-height: 22px;
+}
+
+.bocomui-calendar__day--today {
+  background-color: #e0e0e0;
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.bocomui-calendar__day--exclude {
+  color: #dedede;
+}
+
+.bocomui-calendar__day--active,
+.bocomui-calendar__day--start,
+.bocomui-calendar__day--end {
+  background-color: @primary-color-deep;
+  color: #fff;
+  &:hover {
+    background-color: @primary-color-deep;
+  }
+}
+
+.bocomui-calendar__day--start {
+  border-radius: 4px 0 0 4px;
+  &.bocomui-calendar__day--end {
+    border-radius: 4px;
+  }
+}
+
+.bocomui-calendar__day--end {
+  border-radius: 0 4px 4px 0;
+}
+
+.bocomui-calendar__day--inside {
+  background-color: @primary-color-light;
+  border-radius: 0;
+  &:hover {
+    background-color: @primary-color-light;
+  }
+}

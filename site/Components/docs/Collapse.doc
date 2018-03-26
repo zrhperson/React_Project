@@ -1,0 +1,29 @@
+/**
+ * @title 基本功能
+ */
+import { Component } from 'react'
+import { Collapse, CollapseItem } from 'bocomui/Collapse'
+
+class CollapseBasic extends Component {
+    
+    render() {
+		let title1="新华社大连8月13日电 经过8年多的科研攻坚，我国新一代中低速磁浮列车近日在上海完成时速120公里运行试验。中国中车大连公司总工程师曲天威表示，运行试验的顺利完成，意味着我国已掌握新一代中低速磁浮系统集成等关键核心技术，这种车最快1年可进行批量投产";
+		let title2="美国科学家最近发现新的数据传输技术，可望用于开发超高速WiFi。一般无线网络的最快速度为每秒500MB，科学家成功克服技术障碍，利用“太赫兹”（terahertz）电波传送数据，速度可高达每秒50GB，快了约100倍。";
+		return (
+			<Collapse>
+			  <CollapseItem icon="users" title="中国新一代中低速磁浮列车" defaultOpen>
+				<CollapseItem title={title1} />
+			  </CollapseItem>
+			  <CollapseItem icon="users" title="高频传输比现有WiFi快百倍" >
+				<CollapseItem title={title2}/>
+			  </CollapseItem>
+			  <CollapseItem icon="users" title="中国新一代中低速磁浮列车" >
+				<CollapseItem title={title1} />
+			  </CollapseItem>
+			</Collapse>
+		)
+	}
+}
+
+@component Collapse/Collapse
+@component Collapse/CollapseItem

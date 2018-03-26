@@ -1,0 +1,60 @@
+/**
+ * Copyright 2017-present, BOCOMUI, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+@import '../../variables.less';
+
+.bocomui-form__item {
+  margin-bottom: 15px;
+}
+
+.bocomui-form__item-label {
+  line-height: 30px;
+  height: 30px;
+  text-align: right;
+  float: left;
+}
+
+.bocomui-form__item-content {
+  overflow: auto;
+}
+
+.bocomui-form__item-label--required {
+  &:before {
+    content: '* ';
+    color: @danger-color;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+}
+
+.bocomui-form__item-tip {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: inline-block;
+  color: #999;
+  > .bocomui-icon {
+    margin-right: 3px;
+  }
+}
+
+.bocomui-form__item--error {
+  .bocomui-input,
+  .bocomui-form-textarea {
+    border-color: @danger-color;
+  }
+  .bocomui-select,
+  .bocomui-multiple-select {
+    border-color: @danger-color;
+  }
+  .bocomui-form__item-tip {
+    color: @danger-color;
+  }
+}

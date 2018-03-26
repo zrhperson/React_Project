@@ -1,0 +1,15 @@
+/**
+ * @title 基本功能
+ */
+import BackTop from 'bocomui/BackTop'
+
+const BackTopBasic = () => {
+  return (
+     <div>
+        <BackTop time={500} top={100} dom={<a>back top</a>}/>
+        <BackTop time={500} top={0} visibilityHeight={200}/>
+     </div>
+  )
+}
+
+@component BackTop

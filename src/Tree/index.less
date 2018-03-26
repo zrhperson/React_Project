@@ -1,0 +1,89 @@
+/**
+ * Copyright 2017-present, BOCOMUI, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+@import '../variables.less';
+
+.bocomui-tree {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.bocomui-tree__node {
+  white-space: nowrap;
+  > .bocomui-tree__node-list,
+  > .bocomui-tree__fetch {
+    display: none;
+    margin-left: 20px;
+  }
+}
+
+.bocomui-tree__checkbox {
+  margin-right: 5px;
+}
+
+.bocomui-tree__node--open {
+  > .bocomui-tree__node-list,
+  > .bocomui-tree__fetch {
+    display: block;
+    .bocomui-fetch__state {
+      left: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+  > .bocomui-tree__node-toggle {
+    transform: rotate(90deg);
+  }
+}
+
+.bocomui-tree__node-before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bocomui-tree__node-type {
+  color: @primary-color;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.bocomui-tree__node-content {
+  display: inline-block;
+  position: relative;
+  padding: .2em .3em;
+  border-radius: 2px;
+  cursor: pointer;
+  vertical-align: middle;
+  &:hover {
+    background-color: @primary-color-light;
+  }
+}
+
+.bocomui-tree__node--empty {
+  margin-left: 40px;
+  line-height: 30px;
+  color: #999;
+}
+
+.bocomui-tree__node-content--active {
+  background-color: #bbdefb;
+  &:hover {
+    background-color: #bbdefb!important;
+  }
+}
+
+.bocomui-tree__node-content--disabled {
+  color: #999;
+  &:hover {
+    cursor: default;
+    background-color: transparent;
+  }
+}

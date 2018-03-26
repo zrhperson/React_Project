@@ -1,0 +1,84 @@
+/**
+ * Copyright 2017-present, BOCOMUI, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+@import '../../variables.less';
+
+.bocomui-steps {
+	width : 100%;
+	.bocomui-icon {
+		font-size: 18px;
+	}
+}
+.bocomui-steps__box {
+	z-index: 9999;
+	float: left;
+}
+.bocomui-steps__box--circle {
+	position: relative;
+	text-align: center;
+	border: 1px solid;
+	vertical-align: middle;
+  transition: all .15s;
+}
+.bocomui-steps__box--circle_finish{
+	color: @primary-color;
+	background-color: #FFF;
+	border-color: @primary-color;
+}
+.bocomui-steps__box--circle_process {
+	color: #FFF;
+	background-color: @primary-color;
+	border-color: @primary-color;
+	cursor: pointer;
+}
+.bocomui-steps__box--circle_wait {
+	color: #999;
+	background-color: #FFF;
+	border-color: #e0e0e0;
+}
+.bocomui-steps__box--title {
+	border: 0px;
+	text-align: center;
+	position: relative;
+	font-size: 12px;
+}
+.bocomui-steps__box--title_finish{
+	color: @primary-color;
+}
+.bocomui-steps__box--title_process {
+	color: @primary-color;
+}
+.bocomui-steps__box--title_wait {
+	color: #999;
+}
+.bocomui-steps__box--line {
+	position: relative;
+	height: 1px;
+}
+.bocomui-steps__box--line_finish{
+	background-color: @primary-color;
+}
+.bocomui-steps__box--line_wait {
+	background-color: #e0e0e0;
+}
+.bocomui-steps__box--line_hide {
+	height: 0px;
+	display: none;
+}
+.bocomui-steps__box:hover {
+	.bocomui-steps__box--circle {
+		color: #FFF;
+		background-color: @primary-color;
+		border-color: @primary-color;
+		cursor: pointer;
+	}
+	.bocomui-steps__box--title {
+		color: @primary-color;
+	}
+}

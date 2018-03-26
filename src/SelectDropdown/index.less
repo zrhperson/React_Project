@@ -1,0 +1,57 @@
+/**
+ * Copyright 2017-present, BOCOMUI, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+@import '../variables.less';
+
+.bocomui-select-dropdown {
+  min-width: 160px;
+  outline: none;
+  line-height: 28px;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  border-radius: 2px;
+  position: relative;
+  &:focus {
+    border-color: @primary-color;
+  }
+  &.bocomui-popover__trigger--disabled {
+    &:focus {
+      border-color: #ececec;
+    }
+  }
+  &.bocomui-dropdown-toggle--open {
+    border-color: @primary-color;
+    .bocomui-select-dropdown__caret {
+      color: @primary-color;
+    }
+  }
+}
+
+.bocomui-select-dropdown--caretable {
+  padding-right: 24px;
+}
+
+.bocomui-select-dropdown__caret {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.bocomui-select-dropdown__popover {
+  > .bocomui-popover__content {
+    max-width: none;
+    padding: 0;
+    > ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+}

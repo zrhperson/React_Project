@@ -1,0 +1,40 @@
+/**
+ * Copyright 2017-present, BOCOMUI, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ */
+
+.bocomui-daterange {
+  display: inline-block;
+  vertical-align: middle;
+  .bocomui-datepicker {
+    &:first-child {
+      float: left;
+      .bocomui-input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+    &:last-child {
+      float: right;
+      .bocomui-input {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
+
+.bocomui-daterange__seperator {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  display: inline-block;
+  background-color: #fcfcfc;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
